@@ -1,0 +1,55 @@
+*{
+    background-color: rgb(190, 189, 189);
+    font-family: monospace;
+}
+.contentss{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.contentss ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+    position: sticky;
+
+}
+
+.contentss ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.contentss ul li a{
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+    padding: 1px -1px;
+    transition: all .3s ease;
+    
+}
+
+.contentss ul li a:hover{
+    color: yellowgreen;
+}
+
+.pic img{
+    width: 59%;
+    height: 50%;
+}
+#style{
+    font-style: italic
+}
+#luffy{
+    height: 250px;
+    width: 25%;
+}
+#zoro{
+    height: 250px;
+    width: 25%;
+}
+#sanji{
+    height: 250px;
+    width: 25%;
+}

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: monospace;
+}
+.contents .title{
+    position: absolute;
+	display: block;
+	font-size:40px;
+	font-family: monospace;
+	font-weight: bold;
+	text-transform: uppercase;
+    left: 1%;
+	float: left;
+	color: rgba(17, 73, 0, 0.747);
+}
+.title .tribute{
+    position: absolute;
+	display:block;
+	font-size:16px;
+    left: 1%;
+    bottom: -30%;
+	text-transform:none;
+    color: rgba(44, 44, 44, 0.747);
+
+}
+/* HOME */
+.contents{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: rgba(0, 0, 0, 0.10);
+    height: 10%;
+}
+.contents ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+    position: sticky;
+}
+.contents ul li{
+    list-style: none;
+    display: inline-block;
+}
+.contents ul li a{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+    padding: 5px 13px;
+    transition: all .3s ease;
+}
+.contents ul li a:hover{
+    color: yellowgreen;
+}
+.contents ul li.active a{
+    color: yellowgreen;
+    
+}
+/* INTRO */
+.card{
+    position: absolute;
+	height: 80%;
+	width: 98.8%;
+    top: 15%;
+    left: 0.5%;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+	border-radius: 40px;
+	overflow: hidden;
+	text-align: center;
+}
+.card .intro{
+    position: absolute;
+    left: 4%;
+    top: 2%;
+    font-size: 35px;
+    font-family: monospace;
+    font-weight: bolder;
+    color: rgb(0, 184, 24);
+}
+.card img{
+    position: absolute;
+    left: 4%;
+    top: 12%;
+    height: 53%;
+    width: 30%;
+    border-radius: 2%;
+    border-style: solid;
+    border-color: white;
+}
+.card h1{
+    position: absolute;
+    bottom: 27%;
+    left: 10%;
+    color: rgb(0, 184, 24);
+}
+.card p{
+    position: absolute;
+    text-align: center;
+    left: 36%;
+    top: 14%;
+    font-size: 20px;
+    color: rgb(196, 196, 196);
+}
+.card .ein{
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    text-align: justify;
+}

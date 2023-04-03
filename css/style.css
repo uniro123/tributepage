@@ -1,0 +1,1440 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: monospace;
+}
+/* HOME */
+.contents{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+.contents h1{
+    margin: 0.5%;
+    margin-right: 33%;
+    font-size: 1.8rem;
+    font-family: arial;
+    font-weight: 900;
+}
+.contents span{
+    color: rgb(8, 8, 8);
+}
+.contents span1{
+    color: rgb(0, 109, 24);
+}
+.contents ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+    position: sticky;
+
+}
+
+.contents ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.contents ul li a{
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+    padding: 5px 20px;
+    transition: all .3s ease;
+}
+
+.contents ul li a:hover{
+    color: yellowgreen;
+}
+.contents ul li.active a{
+    color: yellowgreen;
+    
+}
+.text{
+    text-align: center;
+    margin-left: 25%;
+    font-weight: bold;
+    font-style: italic;
+}
+h1.text1{
+    font-family: arial;
+    font-size: 6rem;
+    position: absolute;
+    margin: 12%;
+    margin-left: 33%;
+    color: rgb(85, 84, 84);
+    border-right: 3px solid;
+    width: 39%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 1s steps(40), cursor .1s step-end infinite alternate;        
+}
+@keyframes cursor {
+    50% { border-color: transparent}
+}
+@keyframes typing{
+    from { width: 0 }
+}
+
+.text h1{
+    animation: fadeIn 3s;
+    font-size: 35px;
+    color:white;
+    position: absolute;
+    bottom: 35%;
+}
+@keyframes fadeIn{
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+.text span{
+    color: rgba(55, 235, 0, 0.747);
+}
+.text span1{
+color: rgba(55, 235, 0, 0.747);
+}
+/* ABOUT US*/
+.background1{
+    width: 100%;
+    height: 135vh;
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: monospace;
+}
+.contents1{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+.contents1 h1{
+    margin: 0.5%;
+    margin-right: 33%;
+    font-size: 1.8rem;
+    font-family: arial;
+    font-weight: 900;
+}
+.contents1 span{
+    color: rgb(8, 8, 8);
+}
+.contents1 span1{
+    color: rgb(0, 109, 24);
+}
+.contents1 ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+    position: sticky;
+
+}
+
+.contents1 ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.contents1 ul li a{
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+    padding: 5px 20px;
+    transition: all .3s ease;
+}
+
+.contents1 ul li a:hover{
+    color: yellowgreen;
+}
+.contents1 ul li.active a{
+    color: yellowgreen;
+}
+.text{
+    text-align: center;
+    margin-left: 25%;
+    font-weight: bold;
+    font-style: italic;
+}
+.box{
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    min-height: 800px;
+    top: 0%;
+    left: 0%;
+    background: #d4d4d4;
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+    margin: 1%;
+    animation: slidedown 1s ease;
+}
+@keyframes slidedown{
+    0%{ transform: translateY(550px); }
+    100% { transform: translateY(0);}
+}
+.box .header{
+    position: relative;
+    background: rgb(0, 133, 18);
+    padding: 65px;
+}
+.box .leftside{
+    position: absolute;
+    padding: 2.5px;
+    height: 630px;
+    background: rgb(0, 133, 18);
+    left: 0%;
+    top: 98%;
+}
+.box .rightside{
+    position: absolute;
+    padding: 2.5px;
+    height: 630px;
+    background: rgb(0, 133, 18);
+    top: 0%;
+    right: -12900%;
+}
+.box .footer{
+    position: absolute;
+    background: black;
+    width: 624px;
+    padding: 13px;
+    background: rgb(0, 133, 18);
+    top: 534%;
+    left: 0%;
+}
+.profile .name{
+    position: absolute;
+    font-size: 2.9rem;
+    font-family: monospace;
+    color: white;
+    left: 40%;
+    top: 20%;
+   
+}
+.profile h4{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 10;
+    left: 40%;
+    top: 50%;
+    color: white;
+    
+}
+.profile .picture{
+    position: relative;
+    width: 170px;
+    height: 180px;
+    margin: -25%;
+    margin-left: -5%;
+}
+.profile .about{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 60%;
+    top: 110%;
+    color: rgb(0, 133, 18);
+}
+.profile .linear{
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    color: rgb(0, 133, 18);
+    background-color: rgb(0, 133, 18);
+    border-style: none;
+    left: 60%;
+    top: 131%;
+}
+.profile .aboutme{
+    position: absolute;
+    top: 135%;
+    left: 60%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile .contact{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 5%;
+    top: 150%;
+    color: rgb(0, 133, 18);
+}
+.profile .linear1{
+    position: absolute;
+    height: 2px;
+    width: 124px;
+    color: rgb(0, 133, 18);
+    background-color: rgb(0, 133, 18);
+    border-style: none;
+    left: 5%;
+    top: 171%;
+}
+.profile #email{
+    position: absolute;
+    top: 174%;
+    left: 5%;
+    font-size: 20px;
+    color: rgb(0, 133, 18);
+}
+.profile #fill{
+    position: absolute;
+    font-family: arial;
+    font-size: 0.9rem;
+    top: 175%;
+    left: 9%;
+}
+.profile #phone{
+    position: absolute;
+    top: 193%;
+    left: 5%;
+    font-size: 20px;
+    color: rgb(0, 133, 18);
+}
+.profile #fill1{
+    position: absolute;
+    font-family: arial;
+    font-size: 0.9rem;
+    top: 195%;
+    left: 9%;
+}
+.profile #address{
+    position: absolute;
+    top: 213%;
+    left: 5%;
+    font-size: 20px;
+    color: rgb(0, 133, 18);
+}
+.profile #fill2{
+    position: absolute;
+    font-family: arial;
+    font-size: 0.9rem;
+    top: 215%;
+    left: 9%;
+}
+.profile .education{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 5%;
+    top: 260%;
+    color: rgb(0, 133, 18);
+}
+.profile .linear2{
+    position: absolute;
+    height: 2px;
+    width: 272px;
+    color: rgb(0, 133, 18);
+    background-color: rgb(0, 133, 18);
+    border-style: none;
+    left: 5%;
+    top: 280%;
+}
+.profile #year{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 5%;
+    top: 287%;
+}
+.profile #level{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 5%;
+    top: 298%;
+}
+.profile #school{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 25%;
+    top: 287%;
+}
+.profile #place{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 25%;
+    top: 298%;
+}
+.profile #year1{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 5%;
+    top: 320%;
+}
+.profile #level1{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 5%;
+    top: 330%;
+}
+.profile #school1{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 25%;
+    top: 320%;
+}
+.profile #place1{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 25%;
+    top: 330%;
+}
+.profile #year2{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 5%;
+    top: 353%;
+}
+.profile #level2{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 5%;
+    top: 363%;
+}
+.profile #school2{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 25%;
+    top: 353%;
+}
+.profile #place2{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 25%;
+    top: 363%;
+}
+.profile .rewards{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 65%;
+    top: 220%;
+    color: rgb(0, 133, 18);
+}
+.profile .linear3{
+    position: absolute;
+    height: 2px;
+    width: 147px;
+    color: rgb(0, 133, 18);
+    background-color: rgb(0, 133, 18);
+    border-style: none;
+    left: 65%;
+    top: 240%;
+}
+.profile #award1{
+    position: absolute;
+    left: 67.3%;
+    top: 245%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile #award2{
+    position: absolute;
+    left: 67.3%;
+    top: 260%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile #award3{
+    position: absolute;
+    left: 67.3%;
+    top: 275%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile .qualify{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 5%;
+    top: 400%;
+    color: rgb(0, 133, 18);
+}
+.profile .linear4{
+    position: absolute;
+    height: 2px;
+    width: 172px;
+    color: rgb(0, 133, 18);
+    background-color: rgb(0, 133, 18);
+    border-style: none;
+    left: 5%;
+    top: 420%;
+}
+.profile #qualify1{
+    position: absolute;
+    left: 7.3%;
+    top: 425%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile #qualify2{
+    position: absolute;
+    left: 7.3%;
+    top: 440%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile #qualify3{
+    position: absolute;
+    left: 7.3%;
+    top: 455%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile #qualify4{
+    position: absolute;
+    left: 7.3%;
+    top: 470%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile .character{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 55%;
+    top: 380%;
+    color: rgb(0, 133, 18);
+}
+.profile .linear5{
+    position: absolute;
+    height: 2px;
+    width: 245px;
+    color: rgb(0, 133, 18);
+    background-color: rgb(0, 133, 18);
+    border-style: none;
+    left: 55%;
+    top: 400%;
+}
+.profile #name1{
+    position: absolute;
+    left: 55%;
+    top: 407%;
+    font-family: arial;
+    font-size: 1.1rem;
+}
+.profile #department{
+    position: absolute;
+    left: 55%;
+    top: 425%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile #position{
+    position: absolute;
+    left: 55%;
+    top: 440%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile #contact{
+    position: absolute;
+    left: 55%;
+    top: 455%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+/* Keinji's Resume */
+.box1{
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    min-height: 800px;
+    left: 49.8%;
+    top: -91.7%;
+    background: #d4d4d4;
+    box-shadow: 5px 5px 15px 5px rgb(44, 44, 44);
+    margin: 1%;
+    animation: slidedown 1s ease;
+}
+@keyframes slidedown{
+    0%{ transform: translateY(550px); }
+    100% { transform: translateY(0);}
+}
+.box1 .header1{
+    position: relative;
+    background: rgb(44, 44, 44);
+    padding: 65px;
+}
+.box1 .leftside1{
+    position: absolute;
+    padding: 2.5px;
+    height: 630px;
+    background: rgb(44, 44, 44);
+    left: 0%;
+    top: 98%;
+}
+.box1 .rightside1{
+    position: absolute;
+    padding: 2.5px;
+    height: 630px;
+    background: rgb(44, 44, 44);
+    top: 0%;
+    right: -12900%;
+}
+.box1 .footer1{
+    position: absolute;
+    width: 624px;
+    padding: 13px;
+    background: rgb(44, 44, 44);
+    top: 534%;
+    left: 0%;
+}
+.profile1 .name1{
+    position: absolute;
+    font-size: 2.9rem;
+    font-family: monospace;
+    color: white;
+    left: 40%;
+    top: 20%;
+   
+}
+.profile1 h4{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 10;
+    left: 40%;
+    top: 50%;
+    color: white;
+    
+}
+.profile1 .picture2{
+    position: relative;
+    width: 170px;
+    height: 180px;
+    margin: -25%;
+    margin-left: -5%;
+}
+.profile1 .about1{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 60%;
+    top: 110%;
+    color: rgb(44, 44, 44);
+}
+.profile1 .linear6{
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(44, 44, 44);
+    border-style: none;
+    left: 60%;
+    top: 131%;
+}
+.profile1 .aboutme1{
+    position: absolute;
+    top: 135%;
+    left: 60%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile1 .contact1{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 5%;
+    top: 150%;
+    color: rgb(44, 44, 44);
+}
+.profile1 .linear7{
+    position: absolute;
+    height: 2px;
+    width: 124px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(44, 44, 44);
+    border-style: none;
+    left: 5%;
+    top: 171%;
+}
+.profile1 #email1{
+    position: absolute;
+    top: 174%;
+    left: 5%;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+}
+.profile1 #fill3{
+    position: absolute;
+    font-family: arial;
+    font-size: 0.9rem;
+    top: 175%;
+    left: 9%;
+}
+.profile1 #phone1{
+    position: absolute;
+    top: 193%;
+    left: 5%;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+}
+.profile1 #fill4{
+    position: absolute;
+    font-family: arial;
+    font-size: 0.9rem;
+    top: 195%;
+    left: 9%;
+}
+.profile1 #address1{
+    position: absolute;
+    top: 213%;
+    left: 5%;
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+}
+.profile1 #fill5{
+    position: absolute;
+    font-family: arial;
+    font-size: 0.9rem;
+    top: 215%;
+    left: 9%;
+}
+.profile1 .education1{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 5%;
+    top: 260%;
+    color: rgb(44, 44, 44);
+}
+.profile1 .linear8{
+    position: absolute;
+    height: 2px;
+    width: 272px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(44, 44, 44);
+    border-style: none;
+    left: 5%;
+    top: 280%;
+}
+.profile1 #year1{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 5%;
+    top: 287%;
+}
+.profile1 #level1{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 5%;
+    top: 298%;
+}
+.profile1 #school1{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 25%;
+    top: 287%;
+}
+.profile1 #place1{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 25%;
+    top: 298%;
+}
+.profile1 #year2{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 5%;
+    top: 320%;
+}
+.profile1 #level2{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 5%;
+    top: 330%;
+}
+.profile1 #school2{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 25%;
+    top: 320%;
+}
+.profile1 #place2{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 25%;
+    top: 330%;
+}
+.profile1 #year3{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 5%;
+    top: 353%;
+}
+.profile1 #level3{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 5%;
+    top: 363%;
+}
+.profile1 #school3{
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: arial;
+    left: 25%;
+    top: 353%;
+}
+.profile1 #place3{
+    position: absolute;
+    font-size: 0.7rem;
+    font-family: arial;
+    left: 25%;
+    top: 363%;
+}
+.profile1 .rewards1{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 65%;
+    top: 220%;
+    color: rgb(44, 44, 44);
+}
+.profile1 .linear9{
+    position: absolute;
+    height: 2px;
+    width: 147px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(44, 44, 44);
+    border-style: none;
+    left: 65%;
+    top: 240%;
+}
+.profile1 #award4{
+    position: absolute;
+    left: 67.3%;
+    top: 245%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile1 #award5{
+    position: absolute;
+    left: 67.3%;
+    top: 260%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile1 #award6{
+    position: absolute;
+    left: 67.3%;
+    top: 275%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile1 #award7{
+    position: absolute;
+    left: 67.3%;
+    top: 290%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile1 .qualify1{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 5%;
+    top: 400%;
+    color: rgb(44, 44, 44);
+}
+.profile1 .linear10{
+    position: absolute;
+    height: 2px;
+    width: 172px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(44, 44, 44);
+    border-style: none;
+    left: 5%;
+    top: 420%;
+}
+.profile1 #qualify5{
+    position: absolute;
+    left: 7.3%;
+    top: 425%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile1 #qualify6{
+    position: absolute;
+    left: 7.3%;
+    top: 440%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile1 #qualify7{
+    position: absolute;
+    left: 7.3%;
+    top: 455%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile1 #qualify8{
+    position: absolute;
+    left: 7.3%;
+    top: 470%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile1 #qualify9{
+    position: absolute;
+    left: 7.3%;
+    top: 485%;
+    font-size: 0.9rem;
+    font-family: arial;
+}
+.profile1 .character1{
+    position: absolute;
+    font-size: 1.4rem;
+    left: 55%;
+    top: 380%;
+    color: rgb(44, 44, 44);
+}
+.profile1 .linear11{
+    position: absolute;
+    height: 2px;
+    width: 245px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(44, 44, 44);
+    border-style: none;
+    left: 55%;
+    top: 400%;
+}
+.profile1 #name2{
+    position: absolute;
+    left: 55%;
+    top: 407%;
+    font-family: arial;
+    font-size: 1.1rem;
+}
+.profile1 #department1{
+    position: absolute;
+    left: 55%;
+    top: 425%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile1 #position1{
+    position: absolute;
+    left: 55%;
+    top: 440%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+.profile1 #contact1{
+    position: absolute;
+    left: 55%;
+    top: 455%;
+    font-family: arial;
+    font-size: 0.9rem;
+}
+/* Activities */
+.card2{
+	height: 95px;
+	width: 300px;
+	padding: 20px 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+	border-radius: 40px;
+	margin: 100px 200px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-650px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.card2 {
+    animation-name: slideInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+.card2 ul{
+    list-style: none;
+}
+.card2 ul li{
+    font-size: 2rem;
+    font-weight: 790;
+    font-family: arial;
+    margin: 5%;
+}
+.card2 ul li a{
+    text-decoration: none;
+    color: rgb(0, 173, 0);
+}
+.card2 ul li:hover{
+	transform: scale(1.2);
+	transition: .6s;
+}
+.card2 h1{
+    color: white;
+    font-size: 1.3rem;
+    margin: -5%;
+}
+/* Activity 2*/
+.card4{
+	height: 95px;
+	width: 300px;
+	padding: 20px 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+	border-radius: 40px;
+	margin: -235px 820px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+@keyframes slideInRight{
+    from {
+        transform: translateX(650px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.card4{   
+        animation-name: slideInRight;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+}
+.card4 ul{
+    list-style: none;
+}
+.card4 ul li{
+    font-size: 2rem;
+    font-weight: 790;
+    font-family: arial;
+    margin: 5%;
+}
+.card4 ul li a{
+    text-decoration: none;
+    color: rgb(0, 173, 0);
+}
+.card4 ul li:hover{
+	transform: scale(1.2);
+	transition: .6s;
+}
+.card4 h1{
+    color: white;
+    font-size: 1.3rem;
+    margin: -5%;
+}
+/* Activity 3 */
+.card5{
+	height: 95px;
+	width: 300px;
+	padding: 20px 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+	border-radius: 40px;
+	margin: 350px 500px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+    animation: slidedown 0.5s ease;
+}
+@keyframes slidedown{
+    0%{ transform: translateY(550px); }
+    100% { transform: translateY(0);}
+}
+.card5 ul{
+    list-style: none;
+}
+.card5 ul li{
+    font-size: 2rem;
+    font-weight: 790;
+    font-family: arial;
+    margin: 5%;
+}
+.card5 ul li a{
+    text-decoration: none;
+    color: rgb(0, 173, 0);
+}
+.card5 ul li:hover{
+	transform: scale(1.2);
+	transition: .6s;
+}
+.card5 h1{
+    color: white;
+    font-size: 1.3rem;
+    margin: -5%;
+}
+/* Tribute */
+.background2{
+    width: 100%;
+    height: 135vh;
+    background: url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: monospace;
+}
+.contents2{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    background-color: rgba(0, 0, 0, 0.10);
+}
+.contents2 h1{
+    margin: 0.5%;
+    margin-right: 33%;
+    font-size: 1.8rem;
+    font-family: arial;
+    font-weight: 900;
+}
+.contents2 span{
+    color: rgb(8, 8, 8);
+}
+.contents2 span1{
+    color: rgb(0, 109, 24);
+}
+.contents2 ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+    position: sticky;
+
+}
+
+.contents2 ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.contents2 ul li a{
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    color: green;
+    padding: 5px 20px;
+    transition: all .3s ease;
+}
+
+.contents2 ul li a:hover{
+    color: yellowgreen;
+}
+.contents2 ul li.active a{
+    color: yellowgreen;
+}
+.text{
+    text-align: center;
+    margin-left: 25%;
+    font-weight: bold;
+    font-style: italic;
+}
+.card3{
+	height: 75%;
+	width: 65%;
+	padding: 20px 35px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+	border-radius: 40px;
+	margin: 35px 200px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+    animation: slidedown 1s ease;
+}
+@keyframes slidedown{
+    0%{ transform: translateY(550px); }
+    100% { transform: translateY(0);}
+}
+.card3 img{
+    height: 300px;
+    width: 370px;
+    border-radius: 5%;
+    margin: 1%;
+}
+.card3 h1{
+    color: White;
+    font-family: monospace;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.card3 u{
+    color: rgb(207, 207, 207);
+}
+.card3 p{
+    color: rgb(196, 196, 196);
+    font-size: 1.3rem;
+    font-family: monospace;
+    margin: 2%;
+}
+.brain img{
+    position: relative;
+    width: 240px;
+    height: 200px;
+    margin: 50%;
+    margin-top: -80%;
+    margin-left: 74%;
+}
+/* CONTACT US */
+.social{
+	display: flex;
+    
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  green;
+	border-radius: 50%;
+	margin: -10px 20px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.2);
+	transition: .4s;
+}
+
+.card{
+	height: 500px;
+	width: 335px;
+	padding: 20px 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+	border-radius: 40px;
+	margin: 35px 200px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin: 0px;
+    border-radius: 50%;
+}
+#media h4{
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 20px 30px;
+    
+}
+#media h3{
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+#media h2{
+    color: #00ff6ad3;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-right: 45%;
+    margin-top: -11%;
+}
+#media p{
+    color: white;
+    margin-left: -5%;
+    font-family: monospace;
+}
+#media i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    border-radius: 50%;
+    margin: 5px 20px;
+    font-size: 15px;
+    margin-right: 100%;
+}
+#media i.fa-solid fa-envelope{
+    margin: -10%;
+}
+h2.phone{
+    margin-left: -5%;
+}
+h2.email{
+    margin-left: -6%;
+}
+p.email{
+    margin-right: 14%;
+}
+
+h5{
+	color: white;
+    font-family: sans-serif;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-600px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.card {
+    animation-name: slideInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+/* Keinji's Contact */
+.social1{
+	display: flex;
+    
+}
+.social1 a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  green;
+	border-radius: 50%;
+	margin: -10px 145px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social1 a:hover{
+	transform: scale(1.2);
+	transition: .4s;
+}
+
+.card1{
+	height: 500px;
+	width: 335px;
+	padding: 20px 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
+	border-radius: 40px;
+	margin: -568px 780px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+@keyframes slideInRight{
+    from {
+        transform: translateX(600px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+.card1 {
+    animation-name: slideInRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+img{
+    height: 150px;
+    width: 150px;
+    margin: 0px;
+    border-radius: 50%;
+}
+#media1 h4{
+    color: white;
+    font-family: monospace;
+    font-size: 25px;
+    margin: 20px 30px;
+    
+}
+#media1 h3{
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+}
+#media1 h2{
+    color: #00ff6ad3;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-right: 45%;
+    margin-top: -11%;
+}
+#media1 p{
+    color: white;
+    margin-left: -5%;
+    font-family: monospace;
+}
+p.address{
+    margin-right: 15%;
+}
+#media1 i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: green;
+    border-radius: 50%;
+    margin: 5px 20px;
+    font-size: 15px;
+    margin-right: 100%;
+}
+#media1 i.fa-solid fa-envelope{
+    margin: -10%;
+}
+h2.phone{
+    margin-left: -5%;
+}
+p.phone{
+    margin-right: 35%;
+}
+h2.email{
+    margin-left: -6%;
+}
+p.email{
+    margin-right: 14%;
+}
+p.email1{
+    margin-right: 11%;
+}
+
+h5{
+	color: white;
+    font-family: sans-serif;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
