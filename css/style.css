@@ -167,51 +167,39 @@ color: rgba(55, 235, 0, 0.747);
     font-weight: bold;
     font-style: italic;
 }
-.box{
+.resumes {
+    display: flex;
+}
+.resume {
     position: relative;
-    width: 100%;
-    max-width: 650px;
-    min-height: 800px;
-    top: 0%;
-    left: 0%;
+    height: 800px;
+    width: 50vw;
     background: #d4d4d4;
-    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
     margin: 1%;
     animation: slidedown 1s ease;
+}
+.box{
+    border-bottom: 26px solid rgb(0, 133, 7);
+    border-left: 5px solid rgb(0, 133, 7);
+    border-right: 5px solid rgb(0, 133, 7);
+    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
 }
 @keyframes slidedown{
     0%{ transform: translateY(550px); }
     100% { transform: translateY(0);}
 }
+@media only screen and (max-width: 900px){
+    .resumes {
+        flex-direction: column;
+    }
+    .resume {
+        width: 95vw;
+    }
+}
 .box .header{
     position: relative;
     background: rgb(0, 133, 18);
     padding: 65px;
-}
-.box .leftside{
-    position: absolute;
-    padding: 2.5px;
-    height: 630px;
-    background: rgb(0, 133, 18);
-    left: 0%;
-    top: 98%;
-}
-.box .rightside{
-    position: absolute;
-    padding: 2.5px;
-    height: 630px;
-    background: rgb(0, 133, 18);
-    top: 0%;
-    right: -12900%;
-}
-.box .footer{
-    position: absolute;
-    background: black;
-    width: 624px;
-    padding: 13px;
-    background: rgb(0, 133, 18);
-    top: 534%;
-    left: 0%;
 }
 .profile .name{
     position: absolute;
@@ -551,50 +539,39 @@ color: rgba(55, 235, 0, 0.747);
     font-size: 0.9rem;
 }
 /* Keinji's Resume */
-.box1{
+.resumes{
+    display: flex;
+}
+.resume{
     position: relative;
-    width: 100%;
-    max-width: 650px;
-    min-height: 800px;
-    left: 49.8%;
-    top: -91.7%;
+    height: 800px;
+    width: 50vw;
     background: #d4d4d4;
-    box-shadow: 5px 5px 15px 5px rgb(44, 44, 44);
     margin: 1%;
     animation: slidedown 1s ease;
+}
+.box1{
+    border-bottom: 26px solid rgb(44, 44, 44);
+    border-left: 5px solid rgb(44, 44, 44);
+    border-right: 5px solid rgb(44, 44, 44);
+    box-shadow: 5px 5px 15px 5px rgb(44, 44, 44);
 }
 @keyframes slidedown{
     0%{ transform: translateY(550px); }
     100% { transform: translateY(0);}
 }
+@media only screen and (max-width: 900px) {
+    .resumes {
+        flex-direction: column;
+    }
+    .resume {
+        width: 95vw;
+    }
+}
 .box1 .header1{
     position: relative;
     background: rgb(44, 44, 44);
     padding: 65px;
-}
-.box1 .leftside1{
-    position: absolute;
-    padding: 2.5px;
-    height: 630px;
-    background: rgb(44, 44, 44);
-    left: 0%;
-    top: 98%;
-}
-.box1 .rightside1{
-    position: absolute;
-    padding: 2.5px;
-    height: 630px;
-    background: rgb(44, 44, 44);
-    top: 0%;
-    right: -12900%;
-}
-.box1 .footer1{
-    position: absolute;
-    width: 624px;
-    padding: 13px;
-    background: rgb(44, 44, 44);
-    top: 534%;
-    left: 0%;
 }
 .profile1 .name1{
     position: absolute;
