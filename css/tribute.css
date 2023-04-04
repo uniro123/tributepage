@@ -121,13 +121,13 @@ nav ul li a:hover{
     float: left;
     width: 25%;
  }
-#biography .main img{
+#career .main img{
     margin: 10px;
     width: 300px;
     height: 400px;
     object-fit: cover;
 }
-#biography .img:hover{
+#career .img:hover{
     cursor: pointer;
     background-color: #f7c324 ;
     border-radius: 30px;
@@ -154,13 +154,13 @@ nav ul li a:hover{
     clear: both;
     
 }
-#foundation .main img{
+#personal .main img{
   margin-left: 10px;
   width: 300px;
   height: 300;
   object-fit: cover;
 }
-#foundation .img:hover{
+#personal .img:hover{
     cursor: pointer;
     background-color: gold;
     border-radius: 25px;
@@ -177,7 +177,7 @@ li{
     text-align: left;
     margin-left: 60px;
 }
-#quotes .img{
+#facts .img{
     margin-left: 90px;
     padding-top: 100px;
     align-items: center;
@@ -185,7 +185,7 @@ li{
     width: 200px;
     height: 300px;
 }
-#quotes q{ 
+#facts q{ 
     text-align: justify;
     margin-left: 5px;
     font-style: italic;
@@ -196,16 +196,16 @@ li{
     margin-left: 0px;
     display: inline-block;
 }
-#quotes q:hover{ 
+#facts q:hover{ 
     color: gold;
 }
-#quotes h2{
+#facts h2{
     color: gold;
     text-align: left;
     margin-left: 5px;
     line-height: 1.5;
 }
-#quotes p{
+#facts p{
     margin-right: 40px;
     line-height: 1.5;
     margin-left: 5;
@@ -220,12 +220,12 @@ li{
 .source a:hover{
     color: aquamarine;
 }
-#contacts p{
+#death p{
     font-style: italic;
     text-decoration: wavy;
     justify-content: center;
  }
-#contacts i{
+#death i{
     color: #f7c324;
     justify-content: left;
     float: left;
@@ -233,77 +233,10 @@ li{
     margin-top: 25px;
     font-size: 70px;
 }
-#contacts i:hover{
+#death i:hover{
     color: aquamarine;
     transform: scale(1.2);
     border-radius:25px ;
-    transition: .4s;
-    cursor: pointer;
-}
-.form{
-    margin-left: 750px;
-    border-radius: 50px;
-    width: 70%;
-    padding: 40px;
-    background: gold;
-}
-.form h4{
-    text-align: center;
-    font-size: 30px;
-    color: #161922;
-    font-weight: 500;
-}
-.form .inputbox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-.form .inputbox input, 
-.form .inputbox textarea{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
-    resize: none;
-}
-.form .inputbox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
-}
-.form .inputbox input:focus ~ span,
-.form .inputbox input:valid ~ span,
-.form .inputbox textarea:focus ~ span,
-.form .inputbox textarea:valid ~ span{
-    font-weight: 1000;
-     color:rgb(211, 45, 45);
-     font-size: 12px;
-     transform: translateY(-20px);
-}
-.form .inputbox input[type="submit"]{
-    width: 100px;
-    background: black;
-    color: #ffff;
-    border-radius: 12px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
-.form .inputbox input[type="submit"]:hover {
-    transform: scale(1.2);
-    background-color:black;
-    border-radius:25px ;
-    border-color:turquoise;
-    color: gold;
     transition: .4s;
     cursor: pointer;
 }
