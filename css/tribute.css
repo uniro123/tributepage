@@ -1,0 +1,324 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgba(0, 0, 0, 0.678);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+nav ul{
+    float: right;
+    margin-right: 5px;
+    margin-top: -14px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: green;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: monospace;
+    padding: 2px 10px;
+}
+nav ul li a:hover{
+    color: yellowgreen;
+}
+#intro{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #161922;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#intro .content img{
+    margin-top: 30px;
+    height: auto;   
+    width: 350px;
+    max-width: 100%;
+}
+#intro .source a{
+    text-align:left;
+    margin-right: 700px;
+}
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    align-items: center;
+}
+.content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.text h1{
+    color:gold;
+    font-size: 73px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.text h5{
+    color: antiquewhite;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.text p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+.text span{
+     color: gold;
+   
+}
+.main{
+    background-color: #161922;
+    width: 100%;
+    padding-top: 70px;
+}
+.main h1{
+    font-size: 73px;
+    color: gold;
+    align-items: center;
+    text-align: center;
+}
+.main p{
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.img{
+    padding:20px;
+    display: flex;
+    float: left;
+    width: 25%;
+ }
+#biography .main img{
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+#biography .img:hover{
+    cursor: pointer;
+    background-color: #f7c324 ;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 5px 5px 5px 5px ;
+    transition: 2s;
+    transform: scale3d(2s);
+ }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.coltxt {
+    color:#fff;
+    padding: 35px;
+    text-align: justify;
+    float: left;
+    width: 50%;
+}
+.rowtxt:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+}
+#foundation .main img{
+  margin-left: 10px;
+  width: 300px;
+  height: 300;
+  object-fit: cover;
+}
+#foundation .img:hover{
+    cursor: pointer;
+    background-color: gold;
+    border-radius: 25px;
+    transition: 2s;
+    transform: scale3d(2s);
+}
+h2{
+    color: gold;
+    text-align: left;
+    margin-left: 40px;
+}
+li{
+    color: #fff;
+    text-align: left;
+    margin-left: 60px;
+}
+#quotes .img{
+    margin-left: 90px;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+}
+#quotes q{ 
+    text-align: justify;
+    margin-left: 5px;
+    font-style: italic;
+    font-family:  'Segoe UI';
+    line-height: 2;
+    font-size: 17;
+    color: #fff;
+    margin-left: 0px;
+    display: inline-block;
+}
+#quotes q:hover{ 
+    color: gold;
+}
+#quotes h2{
+    color: gold;
+    text-align: left;
+    margin-left: 5px;
+    line-height: 1.5;
+}
+#quotes p{
+    margin-right: 40px;
+    line-height: 1.5;
+    margin-left: 5;
+    text-align: justify;
+}
+.source a{
+    text-decoration: none;
+    color: #f7c324;
+    line-height: 2;
+    margin-left: 40px ;
+}
+.source a:hover{
+    color: aquamarine;
+}
+#contacts p{
+    font-style: italic;
+    text-decoration: wavy;
+    justify-content: center;
+ }
+#contacts i{
+    color: #f7c324;
+    justify-content: left;
+    float: left;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 70px;
+}
+#contacts i:hover{
+    color: aquamarine;
+    transform: scale(1.2);
+    border-radius:25px ;
+    transition: .4s;
+    cursor: pointer;
+}
+.form{
+    margin-left: 750px;
+    border-radius: 50px;
+    width: 70%;
+    padding: 40px;
+    background: gold;
+}
+.form h4{
+    text-align: center;
+    font-size: 30px;
+    color: #161922;
+    font-weight: 500;
+}
+.form .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.form .inputbox input, 
+.form .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.form .inputbox input:focus ~ span,
+.form .inputbox input:valid ~ span,
+.form .inputbox textarea:focus ~ span,
+.form .inputbox textarea:valid ~ span{
+    font-weight: 1000;
+     color:rgb(211, 45, 45);
+     font-size: 12px;
+     transform: translateY(-20px);
+}
+.form .inputbox input[type="submit"]{
+    width: 100px;
+    background: black;
+    color: #ffff;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.form .inputbox input[type="submit"]:hover {
+    transform: scale(1.2);
+    background-color:black;
+    border-radius:25px ;
+    border-color:turquoise;
+    color: gold;
+    transition: .4s;
+    cursor: pointer;
+}
+footer{
+line-break: 25px;
+text-align: center;
+color: #fff;
+}
+footer a{
+    display: inline-block;
+    color: #fff;
+    background-color: #161922;
+    text-decoration: none;
+}
+footer .main{
+    padding-top: 10;
+    padding-bottom: 10;
+}
