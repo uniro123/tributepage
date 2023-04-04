@@ -1206,12 +1206,13 @@ color: rgba(55, 235, 0, 0.747);
 }
 .contact2{
     position: relative;
-    height: 78vh;
-    width: 24vw;
+    height: 75vh;
+    width: 100vw;
+    left: 8%;
     padding: 20px 35px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 40px;
-	margin: 35px 200px;
+	margin: 35px 80px;
 	overflow: hidden;
 	text-align: center;
 }
@@ -1222,7 +1223,7 @@ color: rgba(55, 235, 0, 0.747);
     .contactss {
         flex-direction: column;
     }
-    .card {
+    .contact2 {
         width: 65vw;
         height: 98vh;
     }
@@ -1333,8 +1334,8 @@ h5{
 }
 .contact3{
     position: relative;
-    height: 78vh;
-    width: 24vw;
+    height: 75vh;
+    width: 100vw;
     padding: 20px 35px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 40px;
