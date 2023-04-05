@@ -240,6 +240,13 @@ nav ul li a:hover{
     height: 95%;
     padding-top: 70px;
 }
+#facts .main2 img{
+    position: absolute;
+    width: 20%;
+    left: 78%;
+    top: 380%;
+    border-radius: 10%;
+}
 #facts .img{
     margin-left: 90px;
     padding-top: 100px;
@@ -276,93 +283,39 @@ nav ul li a:hover{
     font-size: 130%;
 }
 /* DEATH */
-#contacts p{
-    font-style: italic;
-    text-decoration: wavy;
-    justify-content: center;
- }
-#contacts i{
-    color: #f7c324;
-    justify-content: left;
-    float: left;
-    margin-left: 40px;
-    margin-top: 25px;
-    font-size: 70px;
-}
-#contacts i:hover{
-    color: aquamarine;
-    transform: scale(1.2);
-    border-radius:25px ;
-    transition: .4s;
-    cursor: pointer;
-}
-.form{
-    margin-left: 750px;
-    border-radius: 50px;
-    width: 70%;
-    padding: 40px;
-    background: gold;
-}
-.form h4{
-    text-align: center;
-    font-size: 30px;
-    color: #161922;
-    font-weight: 500;
-}
-.form .inputbox{
-    position: relative;
+.main3{
+    background: rgb(93, 97, 93);
     width: 100%;
-    margin-top: 10px;
+    height: 95%;
+    padding-top: 70px;
 }
-.form .inputbox input, 
-.form .inputbox textarea{
-    width: 100%;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
-    resize: none;
-}
-.form .inputbox span{
+#death .main3 img{
     position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
+    width: 30%;
+    height: 40%;
+    top: 487%;
+    left: 2%;
+    border-radius: 10%;
 }
-.form .inputbox input:focus ~ span,
-.form .inputbox input:valid ~ span,
-.form .inputbox textarea:focus ~ span,
-.form .inputbox textarea:valid ~ span{
-    font-weight: 1000;
-     color:rgb(211, 45, 45);
-     font-size: 12px;
-     transform: translateY(-20px);
+.text4 h1{
+    position: absolute;
+    font-size: 400%;
+    top: 453%;
+    left: 1%;
+    color: green;
+    border-bottom: 3px solid green;
 }
-.form .inputbox input[type="submit"]{
-    width: 100px;
-    background: black;
-    color: #ffff;
-    border-radius: 12px;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+.text4 h2{
+    position: absolute;
+    top: 465%;
+    left: 2%;
+    border-left: 4px solid green;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    letter-spacing: 1px;
+    font-size: 200%;
 }
-.form .inputbox input[type="submit"]:hover {
-    transform: scale(1.2);
-    background-color:black;
-    border-radius:25px ;
-    border-color:turquoise;
-    color: gold;
-    transition: .4s;
-    cursor: pointer;
-}
+/* FOOTER */
 footer{
 line-break: 25px;
 text-align: center;
