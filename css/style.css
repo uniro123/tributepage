@@ -1201,31 +1201,29 @@ color: rgba(55, 235, 0, 0.747);
 	transform: scale(1.2);
 	transition: .4s;
 }
-.contactss{
+.contacts2{
     display: flex;
 }
 .contact2{
     position: relative;
-    height: 75vh;
-    width: 100vw;
-    left: 8%;
+    height: 500px;
+    width: 24vw;
     padding: 20px 35px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 40px;
-	margin: 35px 80px;
+	margin: 35px 200px;
 	overflow: hidden;
 	text-align: center;
 }
-.contact2{
+.card{
     box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
 }
 @media only screen and (max-width: 900px){
-    .contactss {
+    .contacts2 {
         flex-direction: column;
     }
     .contact2 {
-        width: 65vw;
-        height: 98vh;
+        width: 47vw;
     }
 }
 img{
@@ -1329,13 +1327,16 @@ h5{
 	transform: scale(1.2);
 	transition: .4s;
 }
-.contactss{
+
+.contacts2{
     display: flex;
 }
 .contact3{
     position: relative;
-    height: 75vh;
-    width: 100vw;
+    height: 500px;
+    width: 24vw;
+    left: 44%;
+    top: -78%;
     padding: 20px 35px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 40px;
@@ -1343,16 +1344,15 @@ h5{
 	overflow: hidden;
 	text-align: center;
 }
-.contact3{
+.card1{
     box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
 }
 @media only screen and (max-width: 900px){
-    .contactss {
+    .contacts2 {
         flex-direction: column;
     }
     .contact3 {
-        width: 65vw;
-        height: 98vh;
+        width: 47vw;
     }
 }
 @keyframes slideInRight{
