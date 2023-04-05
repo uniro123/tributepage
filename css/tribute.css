@@ -1,131 +1,380 @@
 *{
-    margin: 0;
+    margin: 0%;
     box-sizing: border-box;
-}
-.background{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(165, 165, 165);
-    background-position: center;
-    background-size: cover;
     font-family: monospace;
+    scroll-behavior: smooth;
 }
-.contents .title{
-    position: absolute;
-	display: block;
-	font-size:40px;
-	font-family: monospace;
-	font-weight: bold;
-	text-transform: uppercase;
-    left: 1%;
-	float: left;
-	color: rgba(17, 73, 0, 0.747);
+nav{
+    background-color: rgba(0, 0, 0, 0.20);
+    background-size: cover;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
-.title .tribute{
+nav ul{
+    float: right;
+    margin-right: 1%;
+    margin-top: -0.8%;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: green;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: monospace;
+    padding: 7px 7px;
+}
+nav ul li a:hover{
+    color: yellowgreen;
+}
+.content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
     position: absolute;
-	display:block;
-	font-size:16px;
-    left: 1%;
-    bottom: -30%;
-	text-transform:none;
-    color: rgba(44, 44, 44, 0.747);
-
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 /* HOME */
-.contents{
+#intro{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/tributebg.jpg);
+    background-size: cover;
     display: flex;
-    justify-content: right;
-    align-items: right;
-    background-color: rgba(0, 0, 0, 0.10);
-    height: 10%;
+    justify-content: center;
+    align-items: center;
 }
-.contents ul{
+#intro .content img{
+    position: relative;
+    left: -70%;
+    margin-top: -30%;  
+    width: 70%;
+    max-width: 100%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 13px 2px rgb(15, 13, 13);;
+}
+.content .text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    align-items: center;
+}
+.text h1{
+    position: absolute;
     display: flex;
-    list-style: none;
-    margin: 15px 0px;
-    position: sticky;
-}
-.contents ul li{
-    list-style: none;
-    display: inline-block;
-}
-.contents ul li a{
-    font-size: 25px;
-    font-weight: bold;
-    text-decoration: none;
     color: green;
-    padding: 5px 13px;
-    transition: all .3s ease;
+    font-size: 400%;
+    border-bottom: 3px solid green;
+    left: -1.5%;
+    top: -200%;
 }
-.contents ul li a:hover{
-    color: yellowgreen;
-}
-.contents ul li.active a{
-    color: yellowgreen;
-    
-}
-a:hover,a.active{
-    color: yellowgreen;
-}
-/* INTRO */
-.card{
+.text h2{
     position: absolute;
-	height: 80%;
-	width: 98.8%;
-    top: 15%;
-    left: 0.5%;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 2px 2px 13px 2px rgb(0, 133, 7);
-	border-radius: 40px;
-	overflow: hidden;
-	text-align: center;
+    left: 1%;
+    bottom: -45%;
+    color: green;
+    font-size: 30px;
+    border-bottom: 2px solid green;
 }
-.card .intro{
+.text p {
     position: absolute;
-    left: 4%;
-    top: 2%;
-    font-size: 35px;
-    font-family: monospace;
-    font-weight: bolder;
-    color: rgb(0, 184, 24);
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    top: -130%;
+    left: 31%;
 }
-.card img{
+.text .ein{
     position: absolute;
-    left: 4%;
-    top: 12%;
-    height: 53%;
-    width: 30%;
-    border-radius: 2%;
-    border-style: solid;
-    border-color: white;
-}
-.card h1{
-    position: absolute;
-    bottom: 27%;
-    left: 10%;
-    color: rgb(0, 184, 24);
-}
-.card p{
-    position: absolute;
-    text-align: center;
-    left: 36%;
-    top: 14%;
-    font-size: 20px;
-    color: rgb(196, 196, 196);
-}
-.card .ein{
-    position: absolute;
-    top: 80%;
-    left: 4%;
+    top: 170%;
+    left: -10;
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
     text-align: justify;
 }
-.main {
-    position: absolute;
-    background-color: rgb(133, 133, 133);
+/* CAREER */
+.main{
+    background: gray;
     width: 100%;
-    height: 50%;
-    top: 100%;
+    height: 125%;
     padding-top: 70px;
-    
+}
+.text1 h1{
+    position: absolute;
+    font-size: 400%;
+    left: 84%;
+    top: 107%;
+    color: green;
+    border-bottom: 3px solid green;
+}
+.main p{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    left: 1%;
+    top: 119%;
+}
+.main .career2{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    left: 1%;
+    top: 159%;
+}
+.main .career3{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    left: 1%;
+    top: 187%;
+}
+#career .main img{
+    position: absolute;
+    display: flex;
+    height: 40%;
+    width: 30%;
+    border-radius: 10%;
+    left: 68%;
+    top: 118%;
+ }
+/* PERSONAL LIFE */
+.main1{
+    background: rgb(148, 148, 148);
+    width: 100%;
+    height: 125%;
+    padding-top: 70px;
+}
+#personal .main1 img{
+    position: absolute;
+    display: flex;
+    width: 28%;
+    height: 40%;
+    border-radius: 10%;
+    top: 245%;
+    left: 1%;
+}
+.text2 h1{
+    position: absolute;
+    font-size: 400%;
+    top: 233%;
+    left: 1%;
+    color: green;
+    border-bottom: 3px solid green;
+}
+.text2 p{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: center;
+    left: 31%;
+    top: 245%;
+}
+.text2 .personal2{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    left: 31%;
+    top: 268%;
+}
+.text2 .personal3{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    left: 1%;
+    top: 299%;
+}
+.text2 .personal4{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    left: 1%;
+    top: 319%;
+}
+.text2 .personal5{
+    position: absolute;
+    color: rgb(15, 13, 13);
+    font-size: 21px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    text-align: justify;
+    left: 1%;
+    top: 335%;
+}
+/* FACTS */
+.main2{
+    background: rgb(93, 97, 93);
+    width: 100%;
+    height: 95%;
+    padding-top: 70px;
+}
+#facts .img{
+    margin-left: 90px;
+    padding-top: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+}
+.text3 h1{
+    position: absolute;
+    font-size: 400%;
+    top: 357%;
+    left: 1%;
+    color: green;
+    border-bottom: 3px solid green;
+}
+.text3 h2{
+    color: green;
+    position: absolute;
+    font-size: 180%;
+    top: 366%;
+    left: 1%;
+}
+.text3 ul{
+    list-style: none;
+    position: absolute;
+    top: 370%;
+}
+.text3 ul li{
+    display: flex;
+    margin-top: 2%;
+    justify-content: justify;
+    font-weight: bolder;
+    font-size: 130%;
+}
+/* DEATH */
+#contacts p{
+    font-style: italic;
+    text-decoration: wavy;
+    justify-content: center;
+ }
+#contacts i{
+    color: #f7c324;
+    justify-content: left;
+    float: left;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 70px;
+}
+#contacts i:hover{
+    color: aquamarine;
+    transform: scale(1.2);
+    border-radius:25px ;
+    transition: .4s;
+    cursor: pointer;
+}
+.form{
+    margin-left: 750px;
+    border-radius: 50px;
+    width: 70%;
+    padding: 40px;
+    background: gold;
+}
+.form h4{
+    text-align: center;
+    font-size: 30px;
+    color: #161922;
+    font-weight: 500;
+}
+.form .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.form .inputbox input, 
+.form .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.form .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.form .inputbox input:focus ~ span,
+.form .inputbox input:valid ~ span,
+.form .inputbox textarea:focus ~ span,
+.form .inputbox textarea:valid ~ span{
+    font-weight: 1000;
+     color:rgb(211, 45, 45);
+     font-size: 12px;
+     transform: translateY(-20px);
+}
+.form .inputbox input[type="submit"]{
+    width: 100px;
+    background: black;
+    color: #ffff;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.form .inputbox input[type="submit"]:hover {
+    transform: scale(1.2);
+    background-color:black;
+    border-radius:25px ;
+    border-color:turquoise;
+    color: gold;
+    transition: .4s;
+    cursor: pointer;
+}
+footer{
+line-break: 25px;
+text-align: center;
+color: #fff;
+}
+footer a{
+    display: inline-block;
+    color: #fff;
+    background-color: #161922;
+    text-decoration: none;
+}
+footer .main{
+    padding-top: 10;
+    padding-bottom: 10;
 }
